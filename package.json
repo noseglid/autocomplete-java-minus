@@ -1,5 +1,5 @@
 {
-  "name": "autocomplete-java-plus",
+  "name": "autocomplete-java-minus",
   "main": "./lib/index.js",
   "version": "0.0.0",
   "description": "Autocomplete suggestions for Java",
@@ -8,13 +8,14 @@
     "autocomplete",
     "productivity"
   ],
-  "repository": "https://github.com/noseglid/autocomplete-java-plus",
+  "repository": "https://github.com/noseglid/autocomplete-java-minus",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
     "bluebird": "^3.3.5",
+    "glob": "^7.0.3",
     "jdjs": "0.0.3"
   },
   "providedServices": {
