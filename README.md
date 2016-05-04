@@ -8,7 +8,7 @@ Create a file named `.classpath` in the project root. This file
 will be parsed an classes will be extracted from it and added
 to autocomplete suggestions.
 
-## Why not [autocomplete-java]() ?
+## Why not [autocomplete-java](https://atom.io/packages/autocomplete-java) ?
 
 autocomplete-java-minus differes from `autocomplete-java` in:
 
