@@ -1,0 +1,39 @@
+{
+  "name": "autocomplete-java-plus",
+  "main": "./lib/index.js",
+  "version": "0.0.0",
+  "description": "Autocomplete suggestions for Java",
+  "keywords": [
+    "java",
+    "autocomplete",
+    "productivity"
+  ],
+  "repository": "https://github.com/noseglid/autocomplete-java-plus",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "bluebird": "^3.3.5",
+    "jdjs": "0.0.3"
+  },
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "provide"
+      }
+    }
+  },
+  "consumedServices": {
+    "java.import": {
+      "versions": {
+        "^1.0.0": "consumeJavaImport"
+      }
+    }
+  },
+  "devDependencies": {
+    "babel-eslint": "^6.0.4",
+    "eslint": "^2.9.0",
+    "eslint-config-atom-build": "^3.0.0"
+  }
+}
