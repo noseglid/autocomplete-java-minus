@@ -56,9 +56,12 @@ to automatically insert `import` statements when an autocompletion is accepted.
     - Class files
     - Folders (traversed for Class or Jar files)
   * Autocomplete suggestions for parsed classes
+    - Classes
+    - Static methods of classes with arguments and snippets
   * Integrated with [java-import-wiz](https://github.com/noseglid/java-import-wiz) for auto `import` statements.
 
 ### On the horizon
 
-  * Autocomplete methods with snippets
+  * Autocomplete non-static members
+  * Autocomplete from the current project
 
