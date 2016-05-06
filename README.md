@@ -36,8 +36,7 @@ class or JAR file under `/home/noseglid/devel/JavaProject/build/classes`
   * *go to* or *return from* declaration of any kind
   * Reconstruct source from `.class`-file
 
-While these may be desired features, it is left up to other
-packages to implement.
+While these may be desired features, it is left up to other packages to implement.
 
 ## Add import statement after autocomplete
 
@@ -56,12 +55,16 @@ to automatically insert `import` statements when an autocompletion is accepted.
     - Class files
     - Folders (traversed for Class or Jar files)
   * Autocomplete suggestions for parsed classes
-    - Classes
+    - Classes (Interfaces, Annotations, etc are all classes)
+    - Constructors with arguments and snippets
     - Static methods of classes with arguments and snippets
   * Integrated with [java-import-wiz](https://github.com/noseglid/java-import-wiz) for auto `import` statements.
 
 ### On the horizon
 
   * Autocomplete non-static members
+    - For properties from the superclass, jdjs can be quite useful.
+    - For local properties in the current class, or properties in the local scope, a java tokenizer is required.
   * Autocomplete from the current project
+    - This can in part be achieved by adding compiled `.class` or `.jar` to `.classpath` file. It will not react on new changes yet though.
 
