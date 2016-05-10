@@ -26,6 +26,11 @@
     }
   },
   "consumedServices": {
+    "busy": {
+      "versions": {
+        "^1.0.0": "consumeBusy"
+      }
+    },
     "java.import": {
       "versions": {
         "^1.0.0": "consumeJavaImport"
