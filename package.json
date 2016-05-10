@@ -1,7 +1,7 @@
 {
   "name": "autocomplete-java-minus",
   "main": "./lib/index.js",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Autocomplete suggestions for Java",
   "keywords": [
     "java",
