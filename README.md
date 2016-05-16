@@ -58,13 +58,13 @@ to automatically insert `import` statements when an autocompletion is accepted.
     - Classes (Interfaces, Annotations, etc are all classes)
     - Constructors with arguments and snippets
     - Static methods of classes with arguments and snippets
+  * Autocomplete non-static members
+    - Member fields from superclass
+    - Local member fields
   * Integrated with [java-import-wiz](https://github.com/noseglid/java-import-wiz) for auto `import` statements.
 
 ### On the horizon
 
-  * Autocomplete non-static members
-    - For properties from the superclass, jdjs can be quite useful.
-    - For local properties in the current class, or properties in the local scope, a java tokenizer is required.
   * Autocomplete from the current project
     - This can in part be achieved by adding compiled `.class` or `.jar` to `.classpath` file. It will not react on new changes yet though.
 
