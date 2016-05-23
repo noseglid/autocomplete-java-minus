@@ -49,7 +49,7 @@ to automatically insert `import` statements when an autocompletion is accepted.
 
 ### Current features
 
-  * `rt.jar` parsing (Java Built in classes)
+  * Parse implicit Java JARs (`rt.jar`, `javaws.jar`, etc).
   * `.classpath` parsing:
     - JAR files
     - Class files
@@ -59,6 +59,7 @@ to automatically insert `import` statements when an autocompletion is accepted.
     - Constructors with arguments and snippets
     - Static methods of classes with arguments and snippets
   * Autocomplete non-static members
+    - Fields and members from instanced classes
     - Member fields from superclass
     - Local member fields
   * Integrated with [java-import-wiz](https://github.com/noseglid/java-import-wiz) for auto `import` statements.
