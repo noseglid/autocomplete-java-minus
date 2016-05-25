@@ -59,13 +59,13 @@ to automatically insert `import` statements when an autocompletion is accepted.
     - Constructors with arguments and snippets
     - Static methods of classes with arguments and snippets
   * Autocomplete non-static members
-    - Fields and members from instanced classes
-    - Member fields from superclass
-    - Local member fields
+    - Fields and members from instanced classes, and it's inherited members
+    - Member fields and methods from superclass
+    - Local member fields and methods
+
   * Integrated with [java-import-wiz](https://github.com/noseglid/java-import-wiz) for auto `import` statements.
 
-### On the horizon
+### Upcomming features
 
-  * Autocomplete from the current project
-    - This can in part be achieved by adding compiled `.class` or `.jar` to `.classpath` file. It will not react on new changes yet though.
-
+  * Automatically refresh classes in the current project as it's edited.
+  * Autocomplete local variables in methods (arguments, variables etc) and their members.
