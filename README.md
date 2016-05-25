@@ -1,3 +1,13 @@
+>## Under development
+
+> There's a lot of features regarding autocompleting java which is
+> not complete yet. Parsing Java with all its quirks is complicated
+> and it will take a long time to get everything right.
+>
+> Read the [CONTRIBUTING guidelines](CONTRIBUTING.md) before
+> opening PRs or Issues.
+
+
 # autocomplete-java-minus
 
 Autocomplete suggestions for Java.

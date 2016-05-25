@@ -3,6 +3,9 @@
   "main": "./lib/index.js",
   "version": "0.1.0",
   "description": "Autocomplete suggestions for Java",
+  "scripts": {
+    "lint": "eslint lib spec"
+  },
   "keywords": [
     "java",
     "autocomplete",
