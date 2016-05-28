@@ -1,7 +1,7 @@
 {
   "name": "autocomplete-java-minus",
   "main": "./lib/index.js",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Autocomplete suggestions for Java",
   "scripts": {
     "lint": "eslint lib spec"
@@ -27,7 +27,9 @@
     "eslint": "^2.9.0",
     "eslint-config-atom-build": "^3.0.0"
   },
-  "package-deps": [ "java-classpath-registry" ],
+  "package-deps": [
+    "java-classpath-registry"
+  ],
   "providedServices": {
     "autocomplete.provider": {
       "versions": {
