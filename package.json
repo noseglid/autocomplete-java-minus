@@ -17,10 +17,17 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
+    "atom-package-deps": "^4.0.1",
     "bluebird": "^3.3.5",
     "glob": "^7.0.3",
     "jdjs": "0.0.3"
   },
+  "devDependencies": {
+    "babel-eslint": "^6.0.4",
+    "eslint": "^2.9.0",
+    "eslint-config-atom-build": "^3.0.0"
+  },
+  "package-deps": [ "java-classpath-registry" ],
   "providedServices": {
     "autocomplete.provider": {
       "versions": {
@@ -29,20 +36,15 @@
     }
   },
   "consumedServices": {
-    "busy": {
-      "versions": {
-        "^1.0.0": "consumeBusy"
-      }
-    },
     "java.import": {
       "versions": {
         "^1.0.0": "consumeJavaImport"
       }
+    },
+    "java.classpath-registry": {
+      "versions": {
+        "^1.0.0": "consumeJavaClasspathRegistry"
+      }
     }
-  },
-  "devDependencies": {
-    "babel-eslint": "^6.0.4",
-    "eslint": "^2.9.0",
-    "eslint-config-atom-build": "^3.0.0"
   }
 }
