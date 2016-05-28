@@ -18,9 +18,7 @@
   },
   "dependencies": {
     "atom-package-deps": "^4.0.1",
-    "bluebird": "^3.3.5",
-    "glob": "^7.0.3",
-    "jdjs": "0.0.3"
+    "bluebird": "^3.3.5"
   },
   "devDependencies": {
     "babel-eslint": "^6.0.4",
