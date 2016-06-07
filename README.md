@@ -12,6 +12,8 @@
 
 Autocomplete suggestions for Java.
 
+![Demonstrative autocompletion](autocomplete.gif?raw=true "Autocomplete")
+
 ## Getting started
 
 **Create a file named `.classpath` in the project root.**
