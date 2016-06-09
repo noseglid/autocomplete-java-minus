@@ -66,10 +66,12 @@ to automatically insert `import` statements when an autocompletion is accepted.
     - JAR files
     - Class files
     - Folders (traversed for Class or Jar files)
+
   * Autocomplete suggestions for parsed classes
     - Classes (Interfaces, Annotations, etc are all classes)
     - Constructors with arguments and snippets
     - Static methods of classes with arguments and snippets
+
   * Autocomplete non-static members
     - Fields and members from instanced classes, and it's inherited members
     - Member fields and methods from superclass
