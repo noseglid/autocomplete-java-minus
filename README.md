@@ -73,11 +73,11 @@ to automatically insert `import` statements when an autocompletion is accepted.
   * Autocomplete non-static members
     - Fields and members from instanced classes, and it's inherited members
     - Member fields and methods from superclass
-    - Local member fields and methods
+    - Class local member fields and methods
+    - Method local variables
 
   * Integrated with [java-import-wiz](https://github.com/noseglid/java-import-wiz) for auto `import` statements.
 
 ### Upcomming features
 
   * Automatically refresh classes in the current project as it's edited.
-  * Autocomplete local variables in methods (arguments, variables etc) and their members.
