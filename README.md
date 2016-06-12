@@ -12,7 +12,7 @@
 
 Autocomplete suggestions for Java.
 
-![Demonstrative autocompletion](autocomplete.gif?raw=true "Autocomplete")
+![Demonstrative autocompletion](https://github.com/noseglid/autocomplete-java-minus/blob/master/autocomplete.gif?raw=true "Autocomplete")
 
 ## Getting started
 
