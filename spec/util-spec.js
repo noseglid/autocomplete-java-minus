@@ -68,6 +68,11 @@ describe('Util', () => {
       expect(extractDotChain('var.someMethodCall(" \\"quote me\\" ")'))
         .toEqual('var.someMethodCall(" \\"quote me\\" ")');
     });
+
+    it('should extract keyword new and constructor', () => {
+      expect(extractDotChain('new Constructor("some argument").someMethod()'))
+        .toEqual('new Constructor("some argument").someMethod()');
+    });
   });
 
   describe('parseDotChain', () => {
@@ -111,6 +116,11 @@ describe('Util', () => {
     it('should work with lambdas', () => {
       expect(parseDotChain('Root.method(someArg -> someArg.doStuff())'))
         .toEqual([ 'Root', 'method(someArg -> someArg.doStuff())' ]);
+    });
+
+    it('should work with contructors', () => {
+      expect(parseDotChain('new Constructor().someMethod()'))
+        .toEqual([ 'new Constructor()', 'someMethod()' ]);
     });
   });
 });
