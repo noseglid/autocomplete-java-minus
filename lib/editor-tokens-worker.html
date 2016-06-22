@@ -1,0 +1,29 @@
+<html>
+  <script type="text/javascript">
+    const ipc = require('electron').ipcRenderer;
+    const BrowserWindow = require('electron').remote.BrowserWindow;
+    const GrammarRegistry = require('first-mate').GrammarRegistry;
+
+    const registry = new GrammarRegistry();
+    let grammar;
+
+    ipc.on('grammar-path', (event, path) => {
+      // Preferrably done synchronuous since no other tasks
+      // are performed in this thread. This decreases the risk
+      // of 'tokenize' request to come before loading grammar.
+      grammar = registry.loadGrammarSync(path);
+    });
+
+    ipc.on('tokenize', function (event, editorId, editorText, fromWindowId) {
+      const fromWindow = BrowserWindow.fromId(fromWindowId);
+      const tokens = [];
+
+      if (grammar) {
+        // May not be set if 'tokenize' request comes before 'grammar-path'
+        Array.prototype.push.apply(tokens, grammar.tokenizeLines(editorText));
+      }
+
+      fromWindow.webContents.send('tokens', editorId, tokens);
+    });
+  </script>
+</html>
