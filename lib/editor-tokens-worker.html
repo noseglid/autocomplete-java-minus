@@ -1,0 +1,17 @@
+<html>
+  <script type="text/javascript">
+    const remote = require('electron').remote
+    const ipc = require('electron').ipcRenderer
+    const BrowserWindow = require('electron').remote.BrowserWindow
+    const firstMate = require('first-mate');
+    console.log(firstMate);
+    // const grammar = require('atom').grammars.grammarForScopeName('source.java');
+
+    console.log(remote.getGlobal('atomApplication').grammars);
+    ipc.on('tokenize', function (event, editorText, fromWindowId) {
+      console.log('got tokenize request:', editorText, fromWindowId);
+      const fromWindow = BrowserWindow.fromId(fromWindowId);
+      BrowserWindow.fromId(fromWindowId).webContents.send('tokens', [ editorText ]);
+    });
+  </script>
+</html>
