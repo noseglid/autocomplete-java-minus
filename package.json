@@ -19,7 +19,7 @@
   "dependencies": {
     "atom-package-deps": "^4.0.1",
     "bluebird": "^3.3.5",
-    "first-mate": "^5.1.1"
+    "first-mate": "^6.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^6.0.4",
